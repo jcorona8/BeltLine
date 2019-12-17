@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="descriptionKeyword" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BeltLineApplication.java.controller.StaffViewSchedule">
+    <children>
+        <Label layoutX="226.0" layoutY="14.0" text="View Schedule">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="39.0" layoutY="73.0" text="Event Name" />
+        <Label layoutX="341.0" layoutY="113.0" text="End Date" />
+        <Button fx:id="filter" layoutX="39.0" layoutY="156.0" mnemonicParsing="false" onAction="#filter" prefHeight="25.0" prefWidth="80.0" text="Filter" />
+        <TableView fx:id="schedule" layoutX="43.0" layoutY="198.0" prefHeight="302.0" prefWidth="512.0">
+            <columns>
+                <TableColumn fx:id="eName" editable="false" prefWidth="136.79992294311523" sortable="false" text="Event Name" />
+                <TableColumn fx:id="sName" editable="false" minWidth="6.0" prefWidth="132.40003967285156" text="Site Name" />
+                <TableColumn fx:id="sDate" prefWidth="86.79998779296875" text="Start Date" />
+                <TableColumn fx:id="eDate" prefWidth="82.4000244140625" text="End Date" />
+                <TableColumn fx:id="staffCount" prefWidth="72.0" text="Staff Count" />
+            </columns>
+        </TableView>
+        <Button fx:id="back" layoutX="265.0" layoutY="512.0" mnemonicParsing="false" onAction="#back" prefWidth="70.0" text="Back" />
+        <Label layoutX="288.0" layoutY="73.0" text="Decription Keyword" />
+        <TextField fx:id="eventName" layoutX="104.0" layoutY="69.0" />
+        <TextField fx:id="descKey" layoutX="406.0" layoutY="69.0" />
+        <Label layoutX="39.0" layoutY="113.0" text="Start Date" />
+        <TextField fx:id="startDate" layoutX="104.0" layoutY="109.0" />
+        <TextField fx:id="endDate" layoutX="406.0" layoutY="109.0" />
+        <Button fx:id="viewEvent" layoutX="475.0" layoutY="156.0" mnemonicParsing="false" onAction="#viewEvent" prefHeight="25.0" prefWidth="80.0" text="View Event" />
+    </children>
+</AnchorPane>

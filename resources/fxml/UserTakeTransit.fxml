@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import BeltLineApplication.java.limiter.TextFieldLimit?>
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BeltLineApplication.java.controller.UserTakeTransitController">
+   <children>
+      <Label layoutX="231.0" layoutY="14.0" text="Take Transit">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="73.0" text="Contain Site" />
+      <ChoiceBox fx:id="containSite" layoutX="142.0" layoutY="69.0" prefWidth="150.0" />
+      <Label layoutX="327.0" layoutY="73.0" text="Transport Type" />
+      <ChoiceBox fx:id="transportType" layoutX="436.0" layoutY="69.0" prefWidth="125.0" />
+      <Button fx:id="filter" layoutX="436.0" layoutY="122.0" mnemonicParsing="false" onAction="#filter" prefWidth="100.0" text="Filter" />
+      <Label layoutX="46.0" layoutY="126.0" text="Price Range" />
+      <TextFieldLimit fx:id="minRange" layoutX="143.0" layoutY="122.0" prefWidth="30.0" />
+      <TextFieldLimit fx:id="maxRange" layoutX="217.0" layoutY="122.0" prefWidth="30.0" />
+      <Label layoutX="191.0" layoutY="126.0" text="--" />
+      <TableView fx:id="transitTable" layoutX="42.0" layoutY="166.0" prefHeight="200.0" prefWidth="519.0">
+        <columns>
+          <TableColumn editable="false" prefWidth="122.66665267944336" sortable="false" text="Route" />
+          <TableColumn editable="false" prefWidth="135.33335876464844" text="Transport Type" />
+            <TableColumn editable="false" prefWidth="94.66668701171875" text="Price" />
+            <TableColumn prefWidth="166.66665649414062" text="# Connected Sites" />
+        </columns>
+      </TableView>
+      <Button fx:id="back" layoutX="45.0" layoutY="390.0" mnemonicParsing="false" onAction="#back" prefWidth="100.0" text="Back" />
+      <Button fx:id="logTransit" layoutX="461.0" layoutY="390.0" mnemonicParsing="false" onAction="#logTransit" prefWidth="100.0" text="Log Transit" />
+      <Label layoutX="200.0" layoutY="394.0" text="Transit Date" />
+      <DatePicker fx:id="transitDate" layoutX="293.0" layoutY="390.0" prefWidth="100.0" />
+   </children>
+</AnchorPane>

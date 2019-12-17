@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="BeltLineApplication.java.controller.ManagerDailyDetail">
+    <children>
+        <Label layoutX="256.0" layoutY="14.0" text="Daily Detail">
+            <font>
+                <Font size="23.0"/>
+            </font>
+        </Label>
+        <Button fx:id="back" layoutX="279.0" layoutY="444.0" mnemonicParsing="false" prefWidth="70.0" text="Back"
+                onAction="#back"/>
+        <TableView fx:id="table" layoutX="26.0" layoutY="74.0" prefHeight="355.0" prefWidth="576.0">
+            <columns>
+                <TableColumn fx:id="eventName" prefWidth="141.19997787475586" text="Event Name"/>
+                <TableColumn fx:id="staffName" prefWidth="147.20005798339844" text="Staff Names"/>
+                <TableColumn fx:id="totalVisits" minWidth="5.99993896484375" prefWidth="120.0" text="Total Visits"/>
+                <TableColumn fx:id="totalRevenue" prefWidth="166.800048828125" text="Total Revenue ($)"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

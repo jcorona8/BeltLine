@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="BeltLineApplication.java.controller.ManagerSiteReport">
+    <children>
+        <Label layoutX="192.0" layoutY="14.0" text="Site Report">
+            <font>
+                <Font size="23.0"/>
+            </font>
+        </Label>
+        <Button fx:id="back" layoutX="213.0" layoutY="443.0" mnemonicParsing="false" prefWidth="70.0" text="Back"
+                onAction="#back"/>
+        <Label layoutX="18.0" layoutY="68.0" text="Start Date"/>
+        <Button fx:id="dailyDetail" layoutX="388.0" layoutY="168.0" mnemonicParsing="false" prefHeight="25.0"
+                prefWidth="94.0"
+                text="Daily Detail" onAction="#dailyDetail"/>
+        <Label layoutX="261.0" layoutY="68.0" text="End Date"/>
+        <Label layoutX="20.0" layoutY="102.0" text="Event Count Range"/>
+        <Label layoutX="261.0" layoutY="102.0" text="Staff Count Range"/>
+        <Label layoutX="16.0" layoutY="137.0" text="Total Visits Range"/>
+        <Label layoutX="261.0" layoutY="137.0" text="Total Revenue Range"/>
+        <TextField layoutX="121.0" layoutY="133.0" prefHeight="25.0" prefWidth="32.0"/>
+        <Label layoutX="163.0" layoutY="137.0" text="--"/>
+        <TextField layoutX="183.0" layoutY="133.0" prefHeight="25.0" prefWidth="32.0"/>
+        <TextField layoutX="392.0" layoutY="133.0" prefHeight="25.0" prefWidth="32.0"/>
+        <Label layoutX="431.0" layoutY="137.0" text="--"/>
+        <TextField layoutX="447.0" layoutY="133.0" prefHeight="25.0" prefWidth="32.0"/>
+        <Button fx:id="filter" layoutX="16.0" layoutY="168.0" mnemonicParsing="false" prefWidth="70.0" text="Filter"
+                onAction="#filter"/>
+        <TableView layoutX="26.0" layoutY="229.0" prefHeight="200.0" prefWidth="465.0">
+            <columns>
+                <TableColumn prefWidth="122.79998397827148" text="Date"/>
+                <TableColumn prefWidth="77.20001220703125" text="Event Count"/>
+                <TableColumn prefWidth="74.39997863769531" text="Staff Count"/>
+                <TableColumn prefWidth="81.5999755859375" text="Total Visits"/>
+                <TableColumn prefWidth="107.60003662109375" text="Total Revenue ($)"/>
+            </columns>
+        </TableView>
+        <TextField layoutX="131.0" layoutY="98.0" prefHeight="25.0" prefWidth="32.0"/>
+        <TextField layoutX="199.0" layoutY="98.0" prefHeight="25.0" prefWidth="32.0"/>
+        <Label layoutX="178.0" layoutY="102.0" text="--"/>
+        <TextField layoutX="369.0" layoutY="98.0" prefHeight="25.0" prefWidth="32.0"/>
+        <Label layoutX="419.0" layoutY="102.0" text="--"/>
+        <TextField layoutX="447.0" layoutY="98.0" prefHeight="25.0" prefWidth="32.0"/>
+        <TextField layoutX="79.0" layoutY="64.0"/>
+        <TextField layoutX="318.0" layoutY="64.0"/>
+    </children>
+</AnchorPane>

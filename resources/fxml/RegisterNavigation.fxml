@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BeltLineApplication.java.controller.RegisterNavigationController">
+   <children>
+      <Label text="Register Navigation" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="userOnly" minHeight="25.0" minWidth="140.0" mnemonicParsing="false" text="User Only" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="70.0" onAction="#userOnly" />
+      <Button fx:id="visitorOnly" minHeight="25.0" minWidth="140.0" mnemonicParsing="false" text="Visitor Only" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="110.0" onAction="#visitorOnly" />
+      <Button fx:id="employeeOnly" minHeight="25.0" minWidth="140.0" mnemonicParsing="false" text="Employee Only" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="150.0" onAction="#employeeOnly" />
+      <Button fx:id="employeeVisitor" minHeight="25.0" minWidth="140.0" mnemonicParsing="false" text="Employee-Visitor" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="190.0" onAction="#employeeVisitor" />
+      <Button fx:id="back" minHeight="25.0" minWidth="140.0" mnemonicParsing="false" text="Back" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="230.0" onAction="#back" />
+   </children>
+</AnchorPane>

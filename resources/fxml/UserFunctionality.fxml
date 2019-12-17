@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BeltLineApplication.java.controller.UserFunctionalityController">
+    <children>
+        <Label layoutX="34.0" layoutY="14.0" text="User Functionality" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="14.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <Button fx:id="takeTransit" minHeight="25.0" minWidth="140.0" mnemonicParsing="false" text="Take Transit" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="70.0" onAction="#takeTransit" />
+        <Button fx:id="viewTransitHistory" minHeight="25.0" minWidth="140.0" mnemonicParsing="false" text="View Transit History" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="110.0" onAction="#viewTransitHistory" />
+        <Button fx:id="back" layoutX="55.0" layoutY="154.0" minHeight="25.0" minWidth="140.0" mnemonicParsing="false" text="Back" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="150.0" onAction="#back" />
+    </children>
+</AnchorPane>

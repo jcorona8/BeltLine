@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0"
+            prefWidth="350.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="BeltLineApplication.java.controller.AdministratorVisitorFunctionalityController">
+    <children>
+        <Label layoutX="34.0" layoutY="14.0" text="Administrator Functionality" AnchorPane.leftAnchor="34.0"
+               AnchorPane.topAnchor="14.0">
+            <font>
+                <Font size="23.0"/>
+            </font>
+        </Label>
+        <Button id="manageProfile" layoutX="25.0" layoutY="70.0" minHeight="25.0" minWidth="140.0"
+                mnemonicParsing="false" onAction="#manageProfile" text="Manage Profile"/>
+        <Button id="exploreEvent" layoutX="25.0" layoutY="190.0" minHeight="25.0" minWidth="140.0"
+                mnemonicParsing="false" onAction="#exploreEvent" text="Explore Event"/>
+        <Button id="manageTransit" layoutX="25.0" layoutY="111.0" minHeight="25.0" minWidth="140.0"
+                mnemonicParsing="false" onAction="#manageTransit" text="Manage Transit" AnchorPane.leftAnchor="25.0"
+                AnchorPane.topAnchor="111.0"/>
+        <Button id="manageSite" layoutX="25.0" layoutY="150.0" minHeight="25.0" minWidth="140.0" mnemonicParsing="false"
+                onAction="#manageSite" text="Manage Site"/>
+        <Button id="takeTransit" layoutX="185.0" layoutY="111.0" minHeight="25.0" minWidth="140.0"
+                mnemonicParsing="false" onAction="#takeTransit" text="Take Transit"/>
+        <Button id="viewTransitHistory" layoutX="25.0" layoutY="230.0" minHeight="25.0" minWidth="140.0"
+                mnemonicParsing="false" onAction="#viewTransitHistory" text="View Transit History"/>
+        <Button id="back" layoutX="185.0" layoutY="230.0" minHeight="25.0" minWidth="140.0" mnemonicParsing="false"
+                onAction="#back" text="Back"/>
+        <Button id="manageUser" layoutX="185.0" layoutY="70.0" minHeight="25.0" minWidth="140.0" mnemonicParsing="false"
+                onAction="#manageUser" text="Manage User"/>
+        <Button id="exploreSite" layoutX="185.0" layoutY="150.0" minHeight="25.0" minWidth="140.0"
+                mnemonicParsing="false" onAction="#exploreSite" text="Explore Site"/>
+        <Button id="viewVisitHistory" layoutX="185.0" layoutY="190.0" minHeight="25.0" minWidth="140.0"
+                mnemonicParsing="false" onAction="#viewVisitHistory" text="View Visit History"/>
+    </children>
+</AnchorPane>

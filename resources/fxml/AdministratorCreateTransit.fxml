@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import BeltLineApplication.java.limiter.TextFieldLimit?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<AnchorPane prefHeight="377.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="BeltLineApplication.java.controller.AdministratorCreateTransitController">
+    <children>
+        <Label layoutX="180.0" layoutY="14.0" text="Create Transit">
+            <font>
+                <Font size="23.0"/>
+            </font>
+        </Label>
+        <Label layoutX="18.0" layoutY="74.0" text="Transport Type"/>
+        <Label layoutX="18.0" layoutY="193.0" text="Connected Sites"/>
+        <Button layoutX="109.0" layoutY="335.0" mnemonicParsing="false" prefWidth="100.0" text="Back"/>
+        <Label layoutX="291.0" layoutY="74.0" text="Route"/>
+        <TextFieldLimit fx:id="route" layoutX="325.0" layoutY="70.0" prefHeight="25.0" prefWidth="49.0"/>
+        <Button layoutX="374.0" layoutY="335.0" mnemonicParsing="false" prefWidth="100.0" text="Create"/>
+        <TextFieldLimit fx:id="price" layoutX="441.0" layoutY="70.0" prefHeight="25.0" prefWidth="32.0"/>
+        <Label layoutX="397.0" layoutY="74.0" text="Price($)"/>
+        <ScrollPane fx:id="connectedSitesScroll" fitToHeight="true" fitToWidth="true" layoutX="109.0" layoutY="115.0"
+                    prefHeight="190.0" prefWidth="363.0" AnchorPane.rightAnchor="28.666666666666686">
+            <content>
+                <ListView fx:id="connectedSites">
+                </ListView>
+                <ScrollBar orientation="VERTICAL" translateX="347.0"/>
+            </content>
+        </ScrollPane>
+        <ChoiceBox fx:id="type" layoutX="108.0" layoutY="70.0" prefWidth="150.0"/>
+    </children>
+</AnchorPane>

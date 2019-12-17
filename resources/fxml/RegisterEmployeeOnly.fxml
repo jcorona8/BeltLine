@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<?import BeltLineApplication.java.limiter.TextFieldLimit?>
+<?import BeltLineApplication.java.limiter.PasswordFieldLimit?>
+<AnchorPane fx:id="anchorPane" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="BeltLineApplication.java.controller.RegisterEmployeeOnlyController">
+    <children>
+        <Label layoutX="192.0" layoutY="14.0" text="Register Employee">
+            <font>
+                <Font size="23.0"/>
+            </font>
+        </Label>
+        <Label layoutX="53.0" layoutY="73.0" text="First Name"/>
+        <TextFieldLimit fx:id="fname" layoutX="124.0" layoutY="69.0"/>
+        <Label layoutX="300.0" layoutY="73.0" text="Last Name"/>
+        <TextFieldLimit fx:id="lname" layoutX="412.0" layoutY="69.0"/>
+        <Label layoutX="389.0" layoutY="268.0" text="Zipcode"/>
+        <Label layoutX="53.0" layoutY="126.0" text="Username"/>
+        <Label layoutX="53.0" layoutY="177.0" text="Password"/>
+        <Label layoutX="300.0" layoutY="177.0" text="Confirm Password"/>
+        <Label layoutX="53.0" layoutY="225.0" text="Phone"/>
+        <Label layoutX="53.0" layoutY="268.0" text="City"/>
+        <Label layoutX="259.0" layoutY="268.0" text="State"/>
+        <Label layoutX="300.0" layoutY="225.0" text="Address"/>
+        <TextFieldLimit fx:id="username" layoutX="124.0" layoutY="122.0"/>
+        <TextFieldLimit fx:id="phone" layoutX="124.0" layoutY="221.0"/>
+        <TextFieldLimit fx:id="address" layoutX="412.0" layoutY="221.0"/>
+        <Label layoutX="53.0" layoutY="306.0" text="Email"/>
+        <Label layoutX="300.0" layoutY="126.0" text="User Type"/>
+        <Button fx:id="back" layoutX="124.0" layoutY="429.0" minWidth="100.0" mnemonicParsing="false" text="Back" onAction="#back"/>
+        <Button fx:id="register" layoutX="412.0" layoutY="429.0" minWidth="100.0" mnemonicParsing="false"
+                text="Register" onAction="#registerEmployee"/>
+        <ChoiceBox fx:id="userType" layoutX="411.0" layoutY="122.0" prefWidth="150.0" value="Staff">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Manager"/>
+                    <String fx:value="Staff"/>
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+        <PasswordFieldLimit fx:id="password" layoutX="124.0" layoutY="173.0"/>
+        <PasswordFieldLimit fx:id="confirmPassword" layoutX="412.0" layoutY="173.0"/>
+        <TextFieldLimit fx:id="city" layoutX="124.0" layoutY="264.0" prefWidth="100.0"/>
+        <TextFieldLimit fx:id="emailTextField" layoutX="124.0" layoutY="305.0" prefWidth="250.0" />
+        <Button fx:id="add" layoutX="412.0" layoutY="305.0" minWidth="100.0" mnemonicParsing="false" onAction="#addEmail" text="Add" />
+        <ChoiceBox fx:id="state" layoutX="318.0" layoutY="264.0" prefWidth="50.0" stylesheets="@../css/style.css" value="AL">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="AL"/>
+                    <String fx:value="AK"/>
+                    <String fx:value="AZ"/>
+                    <String fx:value="AR"/>
+                    <String fx:value="CA"/>
+                    <String fx:value="CO"/>
+                    <String fx:value="CT"/>
+                    <String fx:value="DE"/>
+                    <String fx:value="FL"/>
+                    <String fx:value="GA"/>
+                    <String fx:value="HI"/>
+                    <String fx:value="ID"/>
+                    <String fx:value="IL"/>
+                    <String fx:value="IN"/>
+                    <String fx:value="IA"/>
+                    <String fx:value="KS"/>
+                    <String fx:value="KY"/>
+                    <String fx:value="LA"/>
+                    <String fx:value="ME"/>
+                    <String fx:value="MD"/>
+                    <String fx:value="MA"/>
+                    <String fx:value="MI"/>
+                    <String fx:value="MN"/>
+                    <String fx:value="MS"/>
+                    <String fx:value="MO"/>
+                    <String fx:value="MT"/>
+                    <String fx:value="NE"/>
+                    <String fx:value="NV"/>
+                    <String fx:value="NH"/>
+                    <String fx:value="NJ"/>
+                    <String fx:value="NM"/>
+                    <String fx:value="NY"/>
+                    <String fx:value="NC"/>
+                    <String fx:value="ND"/>
+                    <String fx:value="OH"/>
+                    <String fx:value="OK"/>
+                    <String fx:value="OR"/>
+                    <String fx:value="PA"/>
+                    <String fx:value="RI"/>
+                    <String fx:value="SC"/>
+                    <String fx:value="SD"/>
+                    <String fx:value="TN"/>
+                    <String fx:value="TX"/>
+                    <String fx:value="UT"/>
+                    <String fx:value="VT"/>
+                    <String fx:value="VA"/>
+                    <String fx:value="WA"/>
+                    <String fx:value="WV"/>
+                    <String fx:value="WI"/>
+                    <String fx:value="WY"/>
+                    <String fx:value="Other"/>
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+        <TextFieldLimit fx:id="zipcode" layoutX="461.0" layoutY="264.0" prefWidth="100.0"/>
+    </children>
+</AnchorPane>

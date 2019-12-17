@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="850.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="BeltLineApplication.java.controller.ManagerViewEditEvent">
+    <children>
+        <Label layoutX="171.0" layoutY="14.0" text="View/Edit Event">
+            <font>
+                <Font size="23.0"/>
+            </font>
+        </Label>
+        <Label layoutX="18.0" layoutY="74.0" text="Name"/>
+        <Label layoutX="18.0" layoutY="242.0" text="Staff Assigned"/>
+        <Button fx:id="back" layoutX="215.0" layoutY="772.0" mnemonicParsing="false" prefWidth="70.0" text="Back"
+                onAction="#back"/>
+        <Label layoutX="18.0" layoutY="111.0" text="Start Date"/>
+        <Button fx:id="update" layoutX="401.0" layoutY="528.0" mnemonicParsing="false" prefWidth="70.0" text="Update"
+                onAction="#update"/>
+        <Label layoutX="266.0" layoutY="74.0" text="Price($)"/>
+        <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="150.0" layoutY="191.0" prefHeight="111.0"
+                    prefWidth="292.0" AnchorPane.rightAnchor="59.0">
+            <content>
+                <ScrollBar orientation="VERTICAL" translateX="277.0"/>
+            </content>
+        </ScrollPane>
+        <Label layoutX="266.0" layoutY="111.0" text="End Date"/>
+        <Label layoutX="18.0" layoutY="146.0" text="Minimum Staff Required"/>
+        <Label layoutX="266.0" layoutY="146.0" text="Capacity"/>
+        <Label layoutX="33.0" layoutY="416.0" text="Description"/>
+        <ScrollPane layoutX="150.0" layoutY="316.0" prefHeight="150.0" prefWidth="275.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="273.0">
+                    <children>
+                        <TextArea layoutX="-1.0" prefHeight="150.0" prefWidth="275.0" AnchorPane.bottomAnchor="0.0"
+                                  AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0"
+                                  AnchorPane.topAnchor="0.0"/>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <Label layoutX="29.0" layoutY="491.0" text="Daily Visits Range"/>
+        <Label layoutX="250.0" layoutY="491.0" text="Daily Revenue Range"/>
+        <TextField layoutX="129.0" layoutY="487.0" prefHeight="25.0" prefWidth="32.0"/>
+        <Label layoutX="166.0" layoutY="491.0" text="--"/>
+        <TextField layoutX="186.0" layoutY="487.0" prefHeight="25.0" prefWidth="32.0"/>
+        <TextField layoutX="375.0" layoutY="487.0" prefHeight="25.0" prefWidth="32.0"/>
+        <Label layoutX="415.0" layoutY="491.0" text="--"/>
+        <TextField layoutX="436.0" layoutY="487.0" prefHeight="25.0" prefWidth="32.0"/>
+        <Button fx:id="filter" layoutX="28.0" layoutY="528.0" mnemonicParsing="false" prefWidth="70.0" text="Filter"
+                onAction="#filter"/>
+        <TableView layoutX="26.0" layoutY="560.0" prefHeight="200.0" prefWidth="444.0">
+            <columns>
+                <TableColumn prefWidth="173.99999618530273" text="Date"/>
+                <TableColumn prefWidth="100.39997863769531" text="Daily Visits"/>
+                <TableColumn prefWidth="168.800048828125" text="Daily Revenue ($)"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
